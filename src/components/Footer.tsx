@@ -6,7 +6,7 @@ import YoutubeIcon from '../assets/icons/youtube.svg'
 
 export const Footer = () => {
   return(
-    <footer className='py-5 bg-white text-white/60 border-t border-white/20'>
+    <footer className='py-5 bg-white text-black/60 border-t border-white/20'>
     <div className="container">
       <div className='flex flex-col gap-5 sm:flex-row sm:justify-between'>
         <div className="text-center"> 2025 Tranxity All rights are reserved</div>
