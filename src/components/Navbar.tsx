@@ -12,9 +12,9 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       <div className="px-4">
-        <div className="container bg-black">
+        <div className="container bg-white">
           <div className="py-4 flex items-center justify-between">
             {/* Logo Section */}
             <div className="relative">
@@ -24,49 +24,49 @@ export const Navbar = () => {
 
             {/* Mobile Menu Icon */}
             <div
-              className="border border-white border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden cursor-pointer"
+              className="border border-black border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden cursor-pointer"
               onClick={toggleMenu}
             >
-              {isMenuOpen ? <CloseIcon className="text-white" /> : <MenuIcon className="text-white" />}
+              {isMenuOpen ? <CloseIcon className="text-black" /> : <MenuIcon className="text-black" />}
             </div>
 
             {/* Navigation Links */}
             <nav
               className={`${
                 isMenuOpen ? 'flex' : 'hidden'
-              } sm:flex flex-col sm:flex-row gap-6 items-center text-white absolute sm:static top-16 left-0 w-full sm:w-auto bg-black sm:bg-transparent z-10 sm:z-auto p-4 sm:p-0`}
+              } sm:flex flex-col sm:flex-row gap-6 items-center text-black absolute sm:static top-16 left-0 w-full sm:w-auto bg-white sm:bg-transparent z-10 sm:z-auto p-4 sm:p-0`}
             >
               <a
                 href="#"
-                className="text-opacity-60 text-white hover:text-opacity-100 transition"
+                className="text-opacity-60 text-black hover:text-opacity-100 transition"
               >
                 About
               </a>
               <a
                 href="#"
-                className="text-opacity-60 text-white hover:text-opacity-100 transition"
+                className="text-opacity-60 text-black hover:text-opacity-100 transition"
               >
                 Features
               </a>
               <a
                 href="#"
-                className="text-opacity-60 text-white hover:text-opacity-100 transition"
+                className="text-opacity-60 text-black hover:text-opacity-100 transition"
               >
                 Updates
               </a>
               <a
                 href="#"
-                className="text-opacity-60 text-white hover:text-opacity-100 transition"
+                className="text-opacity-60 text-black hover:text-opacity-100 transition"
               >
                 Help
               </a>
               <a
                 href="#"
-                className="text-opacity-60 text-white hover:text-opacity-100 transition"
+                className="text-opacity-60 text-black hover:text-opacity-100 transition"
               >
                 Customers
               </a>
-              <button className="bg-white py-2 px-4 rounded-lg text-black">
+              <button className="bg-black py-2 px-4 rounded-lg text-white">
                 Ride for free
               </button>
             </nav>
