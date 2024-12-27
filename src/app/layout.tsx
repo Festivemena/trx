@@ -6,7 +6,7 @@ import "./globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tranxity - ",
+  title: "Tranxity - Bike hailing Service",
   description: "Template for saas applications with dark theme",
 };
 
