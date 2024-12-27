@@ -10,16 +10,18 @@ const MapPage = () => {
   const [mapStyle, setMapStyle] = useState("mapbox://styles/mapbox/streets-v12");
 
   useEffect(() => {
+    if (!mapContainerRef.current) return; // Ensure the ref is not null
+
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: mapStyle,
       center: [0, 0], // Initial center [lng, lat]
       zoom: 12, // Initial zoom
     });
-
+  
     // Add navigation controls
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
-
+  
     // Cleanup on unmount
     return () => map.remove();
   }, [mapStyle]);
